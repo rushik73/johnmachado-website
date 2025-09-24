@@ -1,5 +1,4 @@
 <script lang="ts">
-    import Navbar from '$lib/components/Navbar/Navbar.svelte';
     import Slideshow from './LandingSlideshow.svelte';
     import ReviewSlideshow, { type Review } from './ReviewSlideshow.svelte';
 
@@ -61,9 +60,8 @@
     <div class="absolute inset-0 bg-black/60 z-0"></div>
     <div class="relative container mx-auto px-6 text-center md:text-left">
         <h1 class="text-white text-2xl md:text-4xl font-play font-bold leading-tight">
-          John Machado Jiu‑Jitsu is the place to be for world‑class Brazilian Jiu‑Jitsu training.
-          Led by Head Instructor Master John Machado, a 7th‑degree Coral Belt in Brazilian Jiu‑Jitsu.
-          For over 40 years the Machado Brothers have been dedicated to the art of Brazilian Jiu‑Jitsu.
+          John Machado Jiu‑Jitsu is the place to be for top tier Brazilian Jiu‑Jitsu training.
+          Our academy is led by Head Instructor Master John Machado, a 7th‑degree Coral Belt who has been dedicated to the art of Brazilian Jiu‑Jitsu for the past 40 years.
         </h1>
         <p class="mt-6 text-white text-xl md:text-2xl font-play whitespace-nowraps">
          Train with the best in Brazilian Jiu‑Jitsu in the Allen area to build confidence, master real-world self-defense, and transform your body and mind.
@@ -79,6 +77,4 @@
   </div>
 
   <ReviewSlideshow {reviews} interval={7000} slideDuration={600} />
-
-
 </main>

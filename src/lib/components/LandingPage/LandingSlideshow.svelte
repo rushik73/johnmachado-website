@@ -3,7 +3,7 @@
     import { onMount, onDestroy } from 'svelte';
   
     export let images: string[] = [];
-    export let interval = 5000;      // ms between slides
+    export let interval = 3000;      // ms between slides
     export let fadeDuration = 800;   // ms for each fade
   
     let current = 0;

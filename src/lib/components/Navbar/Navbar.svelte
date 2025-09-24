@@ -2,17 +2,18 @@
     
   import { fade, slide } from "svelte/transition";
   import {Hamburger} from 'svelte-hamburgers';
+  
 
   let isOpen = false;
   const toggleMenu = () => { isOpen = !isOpen; };
 
   const navLinks = [
-    { name: "Home", href: "#home" },
+    { name: "Home", href: "/" },
     { name: "Programs", href: "/programs" },
-    { name: "About Us", href: "/aboutus" },
+    { name: "Legacy", href: "/legacy" },
     { name: "Our Members", href: "/ourmembers" },
     { name: "Contact", href: "/contact"},
-    { name: "Shop", href: "/shop"}
+    { name: "Shop", href: "https://shopmachado.com"}
   ];
 </script>
 
@@ -47,12 +48,14 @@
     </div>
   </div>
 
+  
+
   <!-- Mobile Menu -->
   {#if isOpen}
     <ul in:slide out:fade class="md:hidden mt-2 space-y-2 px-4 list-none bg-black">
       {#each navLinks as link}
         <li>
-          <a href={link.href} class="block py-2 px-4 text-white hover:bg-gray-800">{link.name}</a>
+          <a href={link.href} class="block py-2 px-4 text-white font-play font-bold hover:text-yellow-300">{link.name}</a>
         </li>
       {/each}
     </ul>

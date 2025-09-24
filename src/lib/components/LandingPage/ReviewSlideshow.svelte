@@ -52,7 +52,7 @@
     <!-- 2) Semi‑opaque black overlay -->
     <div class="absolute inset-0 bg-black/50"></div>
   
-    <!-- 3) Your content on top -->
+    <!-- 3) Content on top -->
     <div class="relative z-10 text-white text-center w-full">
       <h1 class="font-play font-bold text-7xl">REVIEWS</h1>
       <p class="text-base uppercase tracking-widest mb-8 drop-shadow-sm">Powered by Google</p>
